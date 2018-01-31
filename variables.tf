@@ -1,4 +1,4 @@
-variable "tfjenkinsdemo.pem" {
+variable "tfjenkinsdemo" {
   description = "Name of the SSH keypair to use in AWS."
 }
 
