@@ -2,12 +2,8 @@
 pipeline {
     agent { label 'master' }
 
-    //parameters {
-      //  string(name: 'TFWORKSPACE', defaultValue: 'xxxx', description: 'Enter Terraform workspace')
-  //  }
-
     stages {
- 
+
         stage('Unit Testing Inspec') {
            agent { label 'master' }
            steps {
@@ -45,7 +41,13 @@ pipeline {
                 wrap([$class: 'AnsiColorBuildWrapper', 'colorMapName': 'xterm']) {
 
                     sh '''
-                        kitchen test
+                        #kitchen test
+                        kitchen create
+                        kitchen converge
+                        kitchen verify
+                        kitchen destroy
+                        cat .kitchen/logs/ktf-suite-terraform.log
+                        kitchen diagnose --all
                     '''
                 }
             }
