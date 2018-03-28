@@ -1,0 +1,18 @@
+control 'ec2-instance-1.1' do
+  impact 1.0
+  title 'Ensure no sensitive information is passed via the user-data'
+  describe ec2_instance do
+    it { should exist }
+    its('user-data') { should_not match /password|secret.?access/i }
+  end
+end
+
+control 'ec2-instance-1.2' do
+  impact 0.6
+  title 'Test the IP addresses by specifying meta-data API version'
+  describe ec2_instance(version: '2016-06-30') do
+    it { should exist }
+    its('meta-data/public-ipv4') { should eq '' }
+    its('meta-data/local-ipv4') { should match /^172\.31\..+/ }
+  end
+end
