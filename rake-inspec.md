@@ -69,7 +69,11 @@ $ rake preflight env[kesha]
 preflight passed
 ENV['ANA_ENV']=kesha
 
+OLD 
 $ rake preflight env[kesha] verify[api]
+NEW 
+$ rake preflight RAILS_ENV=kesha  verify[api]
+
 preflight passed
 ENV['ANA_ENV']=kesha
 inspec exec test/verify/controls/api.rb
