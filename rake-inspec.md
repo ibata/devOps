@@ -31,7 +31,7 @@
 - What combination of endpoints they are calling
 
 
-# RHEL Environment testing for Terraform
+## Test planning: RHEL Environment testing for Terraform
  Before passing environments to develoment teams, we want to verify API endpoints function as expected.
 ```
 # AC:
@@ -40,7 +40,7 @@ Ability to run test "suite" specific to an application in an environment
 ```
 
 
- # Routine for preflight
+ ## Test planning: Routine for preflight
  Assuming the use of rake to perform testing tasks, create a task for "preflight" to check that the system running the task has all necessary requirements to perform the task or returns the user a useful message to install required tools.
 
 # Rake Test Execution
@@ -74,19 +74,18 @@ Profile: tests from test/verify/controls/api.rb (tests from test.verify.controls
 Version: (not specified)
 Target:  local://
 
-  ✔  site-domain: testing url
-     ✔  http GET on http://**************.com status should eq 301
-     ✔  http GET on http://**************.com headers.Location should eq "http://**************.com/"
-     ✔  http GET on http://**************.com status should eq 200
-     ✔  http GET on http://**************.com status should eq 302
-     ✔  http GET on http://**************.com headers.Location should eq "http://**************.com/"
-     ✔  http GET on http://**************.com status should eq 301
-     ✔  http GET on http://**************.com headers.Location should eq "http://**************.com/"
-     ✔  http GET on http://**************.com status should eq 403
-     ✔  http GET on http://**************.com status should eq 302
-     ✔  http GET on http://**************.com status should eq 301
-     ✔  http GET on http://**************.com status should eq 403
-
+✔  site-domain: testing url
+   ✔  http GET on http://**************.com status should eq 301
+   ✔  http GET on http://**************.com headers.Location should eq "http://**************.com/"
+   ✔  http GET on http://**************.com status should eq 200
+   ✔  http GET on http://**************.com status should eq 302
+   ✔  http GET on http://**************.com headers.Location should eq "http://**************.com/"
+   ✔  http GET on http://**************.com status should eq 301
+   ✔  http GET on http://**************.com headers.Location should eq "http://**************.com/"
+   ✔  http GET on http://**************.com status should eq 403
+   ✔  http GET on http://**************.com status should eq 302
+   ✔  http GET on http://**************.com status should eq 301
+   ✔  http GET on http://**************.com status should eq 403
 
 Profile Summary: 1 successful control, 0 control failures, 0 controls skipped
 Test Summary: 11 successful, 0 failures, 0 skipped
