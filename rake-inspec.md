@@ -46,6 +46,10 @@ Ability to run test "suite" specific to an application in an environment
 # Rake Test Execution
 
 ## What is Rake?
+  Rake is Ruby Make, a standalone Ruby utility that replaces the Unix utility 'make', and uses a 'Rakefile' and .rake files to build up a list of tasks. In Rails, Rake is used for common administration tasks, especially sophisticated ones that build off of each other.
+You can get a list of Rake tasks available to you, which will often depend on your current directory, by typing rake --tasks. Each task has a description, and should help you find the thing you need.
+
+To get the full backtrace for running rake task you can pass the option --trace to command line, for example rake db:create --trace.
   Rake enables you to define a set of tasks and the dependencies between them in a file, and then have the right thing happen when you run any given task.
 
 ## Why Rake?
