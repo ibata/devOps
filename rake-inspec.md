@@ -75,17 +75,17 @@ Version: (not specified)
 Target:  local://
 
   ✔  site-domain: testing url
-     ✔  http GET on http://ec2us-admin-kesha.anaplan.com status should eq 301
-     ✔  http GET on http://ec2us-admin-kesha.anaplan.com headers.Location should eq "https://ec2us-admin-kesha.anaplan.com/"
-     ✔  http GET on https://ec2us-admin-kesha.anaplan.com/administration/ status should eq 200
-     ✔  http GET on http://ec2us-auditp1-1-kesha.anaplan.com status should eq 302
-     ✔  http GET on http://ec2us-auditp1-1-kesha.anaplan.com headers.Location should eq "https://ec2us-auditp1-1-kesha.anaplan.com/"
-     ✔  http GET on http://ec2us-sdp-kesha.anaplan.com status should eq 301
-     ✔  http GET on http://ec2us-sdp-kesha.anaplan.com headers.Location should eq "https://ec2us-sdp-kesha.anaplan.com/"
-     ✔  http GET on https://ec2us-sdp-kesha.anaplan.com/ status should eq 403
-     ✔  http GET on https://ec2us-ent1-1-kesha.anaplan.com:6001/entitlement status should eq 302
-     ✔  http GET on http://ec2us-sdp-kesha.anaplan.com status should eq 301
-     ✔  http GET on http://ec2us-vs-kesha.anaplan.com status should eq 403
+     ✔  http GET on http://**************.com status should eq 301
+     ✔  http GET on http://**************.com headers.Location should eq "http://**************.com/"
+     ✔  http GET on http://**************.com status should eq 200
+     ✔  http GET on http://**************.com status should eq 302
+     ✔  http GET on http://**************.com headers.Location should eq "http://**************.com/"
+     ✔  http GET on http://**************.com status should eq 301
+     ✔  http GET on http://**************.com headers.Location should eq "http://**************.com/"
+     ✔  http GET on http://**************.com status should eq 403
+     ✔  http GET on http://**************.com status should eq 302
+     ✔  http GET on http://**************.com status should eq 301
+     ✔  http GET on http://**************.com status should eq 403
 
 
 Profile Summary: 1 successful control, 0 control failures, 0 controls skipped
