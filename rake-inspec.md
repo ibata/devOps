@@ -43,7 +43,7 @@ Ability to run test "suite" specific to an application in an environment
  # Routine for preflight
  Assuming the use of rake to perform testing tasks, create a task for "preflight" to check that the system running the task has all necessary requirements to perform the task or returns the user a useful message to install required tools.
 
-#Rake Execution
+# Rake Test Execution
 
 ## What is Rake?
   Rake enables you to define a set of tasks and the dependencies between them in a file, and then have the right thing happen when you run any given task.
