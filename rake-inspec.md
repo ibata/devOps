@@ -55,7 +55,7 @@ Ability to run test "suite" specific to an application in an environment
 ## How to use Rake?
   No need to install Rake. Rake is now part of the Ruby standard library. Create a "Rakefile" in your work folder
 
-# Sample code
+# Sample execution code
 
 ```
 $ rake preflight
