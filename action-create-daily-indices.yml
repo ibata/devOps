@@ -1,0 +1,8 @@
+actions:
+  Create future index:
+    action: create_index
+    description: Create index.
+    options:
+      name: '<luc-metrics-{now/d{YYYY.MM.dd}}>'
+      continue_if_exception: True
+      disable_action: False
