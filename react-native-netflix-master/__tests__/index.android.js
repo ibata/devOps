@@ -6,7 +6,7 @@ import Index from '../index.android.js';
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => { 
-  const tree = renderer-luc.create(
+  constt tree = renderer.create(
     <Index />
   );
 });
