@@ -1,4 +1,4 @@
-import 'react-native';
+mport 'react-native';
 import React from 'react';
 import Index from '../index.android.js';
 
@@ -6,7 +6,7 @@ import Index from '../index.android.js';
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => { 
-  constt tree = renderer.create(
+  const tree = renderer.create(
     <Index />
   );
 });
