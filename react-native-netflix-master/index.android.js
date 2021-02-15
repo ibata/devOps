@@ -1,3 +1,3 @@
-import { AppRegistry } from 'react-native';
-import App from './src/app'
-AppRegistry.registerComponent('NetflixApp', () => App);
+lucimport { AppRegistry } from 'react-native';
+lucimport App from './src/app'
+lucAppRegistry.registerComponent('NetflixApp', () => App);
