@@ -9,7 +9,7 @@
   "dependencies": {
     "history": "^4.6.1",
     "react": "^16.2.0",
-    "react-native": "^0.50.4",
+    "react-native": "^0.70.6",
     "react-native-animatable": "^1.2.4",
     "react-native-linear-gradient": "^2.3.0",
     "react-native-navigator-animation": "^1.2.0",
